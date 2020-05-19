@@ -1,0 +1,54 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/java/lib/curvesapi-1.04.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/jasperreports-6.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-ooxml-3.11-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/uadetector-json-0.1.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-excelant-3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/xmlbeans-xpath-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/uadetector-core-0.9.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-ooxml-schemas-3.11-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/bootstrap-1.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/jxl-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-ooxml-schemas-3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-logging-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/logback.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/itextpdf-5.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/uadetector-resources-2014.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/javax-inject.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/uadetector-json-0.1.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/iText-2.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-beanutils-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/java-mail-1.4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-javaflow-20060411.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-scratchpad-3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/xmlbeans-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/jcommon-1.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/stax-api-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/jasperreports-fonts.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/gson-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-digester-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/jasperreports-6.3.1_1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-examples-3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-ooxml-3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/quality-check-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-collections4-4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/BootsFaces-OSP-1.0.2-dist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/browsermob-dist-2.1.0-beta-3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-codec-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/org.apache.commons.collections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/commons-collections-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/poi-3.11-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/primefaces-6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

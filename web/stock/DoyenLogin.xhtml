@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>STOCK | Accueil</title>
+
+        <!-- Custom CSS -->
+        <link rel="shortout icon" type="image/x-icon" href="#{resource['images/favicon.png']}" />
+        <link href="../resources/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/heroic-features.css" rel="stylesheet"></link>
+        <link href="../resources/css/layout.css" rel="stylesheet" type="text/css" media="all"/>
+        <!-- Bootstrap core CSS     -->
+        <link href="./newtemplate/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <!--  Material Dashboard CSS    -->
+        <link href="./newtemplate/assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
+        <!--  CSS for Demo Purpose, don't include it in your project     -->
+        <link href="./newtemplate/assets/css/demo.css" rel="stylesheet" />
+        <!--     Fonts and icons     -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"></link>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'></link>
+
+
+    </h:head>
+    <h:body style="background-image: url(../resources/images/demo/body-bg41.png); background-attachment: fixed;">
+        <!-- Navigation -->
+        <p:growl id="growl" life="3000" />
+
+        <style>
+            .kira{
+                background-color: rgba(40,40,40,0.4);
+            }
+            .thumbnail{
+                background-color: rgba(240,240,240,0.6); 
+            }
+            .thumbnail:hover{
+                background-color: rgb(255,255,255); 
+            }
+        </style>
+
+        <ui:include src="Header.xhtml"/>
+
+        <div class="main-panel">
+            <!--<div class="content">-->
+            <br></br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header" data-background-color="green">
+                                <i class="material-icons">content_paste</i>
+                            </div>
+                            <div class="card-content">
+                                <!--<p:commandLink action="Commande" class="category">Commande</p:commandLink>-->
+                                <a href="Commande.xhtml" >Effectuer une Commande</a>
+                            </div>
+                            <div class="card-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header" data-background-color="orange">
+                                <i class="material-icons">library_books</i>
+                            </div>
+                            <div class="card-content">
+                                <!--<p:commandLink action="ExpressionBesoinDoyen" class="category">Expression de Besoin</p:commandLink>-->
+                                <a href="ExpressionBesoinDoyen.xhtml" >Consulter les Exp. de Besoin</a>
+                            </div>
+                            <div class="card-footer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header" data-background-color="blue">
+                                <i class="material-icons">library_books</i>
+                            </div>
+                            <div class="card-content">
+                                <!--<p:commandLink action="Ajout" class="category">Ajout</p:commandLink>-->
+                                <a href="Facture.xhtml" >Enregistrer une Facture</a>
+                            </div>
+                            <div class="card-footer">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header" data-background-color="red">
+                                <i class="material-icons">event_available</i>
+                            </div>
+                            <div class="card-content">
+                                <!--<p:commandLink action="Facture" class="category">Facture</p:commandLink>-->
+                                <a href="Livraison.xhtml" >Enregistrer une Livraison</a>
+                            </div>
+                            <div class="card-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h:form id="idForm2">
+                     <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header card-chart" data-background-color="green">
+                                <div class="ct-chart" id="dailySalesChart"></div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="title">Chart des Factures</h4>
+                                <p:commandButton value="Voir" action="chartPage.xhtml?faces-redirect=true" icon="ui-icon-check" style="background-color: #2a9942" class="btn btn-sm pull-right"></p:commandButton>
+                                <p class="category">
+                                    <span class="text-success"><i class="fa fa-long-arrow-up"></i>  </span> Le taux des facture par année.</p>
+                            </div>
+                            <div class="card-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header card-chart" data-background-color="orange">
+                                <div class="ct-chart" id="emailsSubscriptionChart"></div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="title">Télécharger vos Factures</h4>
+                                
+                                <p:commandButton value="Télecharger"  icon="ui-icon-print" ajax="false" actionListener="#{commandeController.printMultiFctr()}" style="background-color: #ffa023" class="btn btn-sm pull-right"></p:commandButton>
+                                <p class="category">Vos Factures PDF</p>
+                            </div>
+                            <div class="card-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header card-chart" data-background-color="red">
+                                <div class="ct-chart" id="completedTasksChart"></div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="title">Télécharger vos Commandes</h4>
+                                <p:commandButton value="Télecharger" icon="ui-icon-print" ajax="false" actionListener="#{commandeController.printMultiCmd()}" style="background-color: #dd0f1d" class="btn btn-sm pull-right"></p:commandButton>
+                                <p class="category">Vos Commande PDF</p>
+                            </div>
+                            <div class="card-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </h:form>
+                <h:form id="idForm">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card card-nav-tabs">
+                                <div class="card-header" data-background-color="purple">
+                                    <div class="nav-tabs-navigation">
+                                        <div class="nav-tabs-wrapper">
+                                            <h4 class="title">Expressions de Besoins Rédigées Aujourd'hui</h4>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="profile">
+                                            <p:dataTable value="#{expressionBesoinController.expressionsToday}" var="item" id="tab">
+                                                <p:column>
+                                                    <f:facet name="header">
+                                                        <h:outputText value="Membre"/>
+                                                    </f:facet>
+                                                    <h:outputText value="#{item.userStock.nom}"/>
+                                                </p:column>
+                                                <p:column>
+                                                    <f:facet name="header">
+                                                        <h:outputText value="Entite Admin"/>
+                                                    </f:facet>
+                                                    <h:outputText value="#{item.userStock.entiteAdministrative.libelle}"/>
+                                                </p:column>
+                                                <p:column>
+                                                    <f:facet name="header">
+                                                        <h:outputText value="Date"/>
+                                                    </f:facet>
+                                                    <h:outputText value="#{item.dateExpressionBesoin}">
+                                                        <f:convertDateTime pattern="dd-MM-yyyy" />
+                                                    </h:outputText>
+                                                </p:column>
+                                            </p:dataTable>
+                                            <div class="card-content">
+                                                <a href="ExpressionBesoinDoyen.xhtml?faces-redirect=true" style="font-size: 100%;font-weight: bold"  >
+                                                    >>> Consulter les Expressions de Besoin pour plus des détails..
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header" data-background-color="orange">
+                                    <h4 class="title">Livraisons complètes</h4>
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <p:dataTable class="table table-hover" value="#{commandeController.commandeslivres}" var="item">
+                                        <p:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="ID"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.id}"/>
+                                        </p:column>
+                                        <p:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="Date de Commande"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.dateCommande}">
+                                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                                            </h:outputText>
+                                        </p:column>
+                                        <p:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="User"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.userStock.nom} #{item.userStock.prenom}"/>
+                                        </p:column>
+                                    </p:dataTable>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h:form>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    AHMED MOUSSA Al-Amine
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    CHAACHAI Youssef
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    OUALILI Younesse
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ZAHID Khalid
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    EL MARARI Abderrahim
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>  
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        The Lazy Team, SIR
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
+        <ui:include src="sideBarDoyen.xhtml"/>
+        <!--<ui:include src="ChartView.xhtml"/>-->
+
+    </h:body>
+
+
+    <script src="./newtemplate/assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="./newtemplate/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./newtemplate/assets/js/material.min.js" type="text/javascript"></script>
+    <!--  Charts Plugin -->
+    <script src="./newtemplate/assets/js/chartist.min.js"></script>
+    <!--  Dynamic Elements plugin -->
+    <script src="./newtemplate/assets/js/arrive.min.js"></script>
+    <!--  PerfectScrollbar Library -->  
+    <script src="./newtemplate/assets/js/perfect-scrollbar.jquery.min.js"></script> 
+    <!--  Notifications Plugin    -->
+    <script src="./newtemplate/assets/js/bootstrap-notify.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Material Dashboard javascript methods -->
+    <script src="./newtemplate/assets/js/material-dashboard.js?v=1.2.0"></script>   
+    <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+    <script src="./newtemplate/assets/js/demo.js"></script>  
+    <script type="text/javascript">
+                            $(document).ready(function () {
+
+                                // Javascript method's body can be found in assets/js/demos.js
+                                demo.initDashboardPageCharts();
+
+                            });
+    </script>
+</html>
+
